@@ -11,7 +11,11 @@ import SwiftUI
 struct WikiPlacesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlacesView(
+                viewModel: PlacesViewModel(
+                    service: PlacesService()
+                )
+            )
         }
     }
 }
