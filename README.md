@@ -28,8 +28,4 @@ When a location is tapped, the app opens the Wikipedia app with the map focused 
 
 ## License
 
-MIT
-
-## Notes
-
-This is an assignment done by Charles Abou Yakdan for an iOS position with ABN AMRO
+None
