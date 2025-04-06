@@ -11,6 +11,10 @@ struct Strings {
     static func addLocation() -> String {
         return String(localized: "add_location")
     }
+    
+    static func error() -> String {
+        return String(localized: "error")
+    }
         
     static func latitude() -> String {
         return String(localized: "latitude")

@@ -22,7 +22,7 @@ struct PlacesView: View {
                 case .success:
                     content
                 case .failure(let error):
-                    Text("Error")
+                    Text(Strings.error())
                         .onAppear() {
                             Logger.ui.error("ui state error \(error)")
                         }
