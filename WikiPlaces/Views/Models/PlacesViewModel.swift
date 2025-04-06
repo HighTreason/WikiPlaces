@@ -43,6 +43,6 @@ final class PlacesViewModel: ObservableObject {
     }
     
     func startWikipediaApp(with location: Location) {
-        //TODO: Open the Wikipedia App
+        Wikipedia.startWikipediaApp(with: location)
     }
 }
