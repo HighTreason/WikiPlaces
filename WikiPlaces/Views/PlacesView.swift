@@ -93,6 +93,7 @@ struct PlacesView: View {
         .onTapGesture {
             showAddLocationSheet.toggle()
         }
+        .accessibilityLabel("\(Strings.addLocation()) \(Strings.button())")
     }
 }
 

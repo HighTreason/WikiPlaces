@@ -12,6 +12,17 @@
         }
       }
     },
+    "button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Button"
+          }
+        }
+      }
+    },
     "error" : {
       "extractionState" : "manual",
       "localizations" : {
