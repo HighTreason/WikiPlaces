@@ -32,6 +32,16 @@ final class PlacesViewModel: ObservableObject {
         }
     }
     
+    func add(location: LocationViewModel) {
+        self.places?.locations.append(
+            Location(
+                name: location.name,
+                long: Double(location.longitude) ?? 0.0,
+                lat: Double(location.latitude) ?? 0.0
+            )
+        )
+    }
+    
     func startWikipediaApp(with location: Location) {
         //TODO: Open the Wikipedia App
     }
