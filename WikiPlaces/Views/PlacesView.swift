@@ -100,3 +100,23 @@ struct PlacesView: View {
         )
     )
 }
+
+#Preview("Mock Service empty result") {
+    PlacesView(
+        viewModel: PlacesViewModel(
+            service: MockPlacesService(
+                empty: true
+            )
+        )
+    )
+}
+
+#Preview("Mock Service throws 404") {
+    PlacesView(
+        viewModel: PlacesViewModel(
+            service: MockPlacesService(
+                throws: .invalidStatusCode(statusCode: 404)
+            )
+        )
+    )
+}
