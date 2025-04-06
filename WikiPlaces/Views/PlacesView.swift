@@ -26,6 +26,7 @@ struct PlacesView: View {
                         .onAppear() {
                             Logger.ui.error("ui state error \(error)")
                         }
+                        .accessibilityLabel(Strings.error())
                 }
             }.onAppear {
                 Task {
@@ -41,6 +42,8 @@ struct PlacesView: View {
                 .font(.largeTitle)
                 .bold()
                 .padding()
+                .accessibilityLabel(Strings.locations())
+            
             Spacer()
             
             if let places = viewModel.places {
