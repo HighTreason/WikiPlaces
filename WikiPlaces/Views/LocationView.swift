@@ -35,6 +35,8 @@ struct LocationView: View {
         .onTapGesture {
             onTapGesture()
         }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(viewModel.name), \(viewModel.coordinates)")
     }
 }
 

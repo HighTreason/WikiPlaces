@@ -22,10 +22,11 @@ struct PlacesView: View {
                 case .success:
                     content
                 case .failure(let error):
-                    Text("Error")
+                    Text(Strings.error())
                         .onAppear() {
                             Logger.ui.error("ui state error \(error)")
                         }
+                        .accessibilityLabel(Strings.error())
                 }
             }.onAppear {
                 Task {
@@ -41,6 +42,8 @@ struct PlacesView: View {
                 .font(.largeTitle)
                 .bold()
                 .padding()
+                .accessibilityLabel(Strings.locations())
+            
             Spacer()
             
             if let places = viewModel.places {
@@ -90,6 +93,7 @@ struct PlacesView: View {
         .onTapGesture {
             showAddLocationSheet.toggle()
         }
+        .accessibilityLabel("\(Strings.addLocation()) \(Strings.button())")
     }
 }
 
